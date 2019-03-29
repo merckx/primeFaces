@@ -1,15 +1,13 @@
 package models;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 
 @Entity
-@Table(name = "user_role")
+@Table(name = "user_roles")
 public class UserRole {
     @Id
+    @GeneratedValue
     private Integer id;
     @Column(name = "code")
     private String code;
